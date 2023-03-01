@@ -30,6 +30,8 @@ int main(){
         //cin >> n;
         cout << pow(3,4) << endl;
         lcmAndGcd(5, 10);
+
+        // for testing git
     }
 
 }
