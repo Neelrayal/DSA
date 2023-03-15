@@ -11,7 +11,9 @@ int main(){
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
  
-    #endif
+    #endif    
 
-
+    cout << "Hello world\n";
 }
+
+//"[[34,56], [28, 29], [12,16], [11,48], [28,54], [22,55], [28,41], [41,44]]"
