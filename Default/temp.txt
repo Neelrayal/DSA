@@ -1,0 +1,11 @@
+1 1
+10 -1
+21 5
+15 14
+6 10
+
+Can you a polygon of these points and make a line with these two points below
+1 -100
+8 100
+
+Also mention the intersection points of these line on polygon

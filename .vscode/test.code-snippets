@@ -1,0 +1,130 @@
+{
+	// Place your snippets for cpp here. 
+	//Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. 
+	//The prefix is what is used to trigger the snippet
+	// the body will be expanded and inserted. 
+	//Possible variables are: $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+		
+
+	"Default CP formate": {
+		"prefix": [			
+			"CP"
+		],
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"#define ll long long",
+			"#define pi (3.141592653589)",
+			"#define mod 1000000007",
+			"#define int long long",
+			"#define float double",
+			"#define pb push_back",
+			"#define mp make_pair",
+			"#define ff first",
+			"#define ss second",
+			"#define all(c) c.begin(), c.end()",
+			"#define min3(a, b, c) min(c, min(a, b))",
+			"#define min4(a, b, c, d) min(d, min(c, min(a, b)))",
+			"#define rrep(i, n) for(int i=n-1;i>=0;i--)",
+			"#define rep(i,n) for(int i=0;i<n;i++)",
+			"#define fast ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);",
+			"\n",
+
+			"bool isPrime(int n){",
+			"	if(n==1) return false;",
+			"	if(n==2) return true;",
+			"	for(int i=2;i*i<=n;i++){",
+			"		if(n%i==0)return false;",
+			"	}",
+			
+			"	return true;",
+			"}\n",
+			"int32_t main(){",
+			"fast",
+			"\n",						
+			"int t=1;",
+			"cin>>t;",
+			"while(t--){",
+			"	$0",
+			"}",
+			"return 0;",
+			"}",
+			"",
+		
+		],
+		"description": "This is a c++ sniffpet",
+		
+	},	
+	"intput output":{
+		"prefix": "input_output",
+		"body": [
+			"#ifndef ONLINE_JUDGE",
+			"freopen(\"input.txt\", \"r\", stdin);",
+			"freopen(\"output.txt\", \"w\", stdout);",
+			"#endif",
+			"\n",
+			"$0",
+
+		],
+		"description": "input output from file"
+	},
+	"default CPP code": {
+		"prefix": "cpp",
+		"body": [
+		  "#include<bits/stdc++.h>",
+		  "using namespace std;",
+		  "",
+		  "int main(){        ",
+		  "",
+		  "	ios_base::sync_with_stdio(0);",
+		  "	cin.tie(0); cout.tie(0);",
+		  "",
+		  "	#ifndef ONLINE_JUDGE",
+		  "	 ",
+		  "	freopen(\"input.txt\", \"r\", stdin);",
+		  "	freopen(\"output.txt\", \"w\", stdout);",
+		  " ",
+		  "	#endif    ",
+		  "",
+		  "	int t;",
+		  "	cin >> t;",
+		  "	while(t--){",
+		  "		int n;",
+		  "		cin >> n; ",
+		  "",
+		  "     	$0",
+		  "	}",
+		  "	",
+		  "}"
+		],
+		"description": "c++ template for CP"
+	  }
+	// "default CPP code": {
+	// 	"prefix": "cpp",
+	// 	"body": [
+	// 	  "#include<bits/stdc++.h>",
+	// 	  "using namespace std;",
+	// 	  "",
+	// 	  "int main(){        ",
+	// 	  "",
+	// 	  "    ios_base::sync_with_stdio(0);",
+	// 	  "    cin.tie(0); cout.tie(0);",
+	// 	  "",
+	// 	  "    #ifndef ONLINE_JUDGE",
+	// 	  "     ",
+	// 	  "    freopen(\"input.txt\", \"r\", stdin);",
+	// 	  "    freopen(\"output.txt\", \"w\", stdout);",
+	// 	  " ",
+	// 	  "    #endif    ",		  		  		  
+	// 	  "    $0",
+	// 	  "}",
+		   
+		  
+
+	// 	],
+	// 	"description": "default cpp file for testing my c++ code"
+	//   }	
+
+}

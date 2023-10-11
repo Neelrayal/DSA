@@ -3,39 +3,32 @@
  * yt: https://www.youtube.com/watch?v=yDbkQd9t2ig&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=18
 */
 
-
 class Solution {
 public:
-
-    // Linear time and O(1) space
-    vector<int> majorityElement(vector<int>& arr) {
-        int ele1 = INT_MIN, ele2 = INT_MIN, c1 = 0, c2 = 0;
-        for(int i=0; i<arr.size(); ++i){
-            if ( arr[i] == ele1) c1++;
-            else if ( arr[i] == ele2) c2++;
-            else if ( c1 == 0){
-                ele1 = arr[i];
-                c1 = 1;
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        // sort + 2 pointer
+        sort(nums.begin(), nums.end());
+        vector<vector<int> > ans; 
+        int i=0, left, right;
+        while(i < nums.size()){
+            int a = -1*nums[i];
+            left = i+1, right = nums.size()-1;
+            while ( left < right){
+                if ( nums[left] + nums[right] == a){
+                    ans.push_back( {nums[i], nums[left], nums[right]} );
+                    int old_left = left, old_right = right; 
+                    while (left<nums.size() && nums[old_left] == nums[left]) left++;
+                    while (right>=0 && nums[old_right] == nums[right]) right--;
+                }
+                else if ( nums[left] + nums[right] < a)
+                    left++;
+                else 
+                    right--;
             }
-            else if ( c2 == 0){
-                ele2 = arr[i];
-                c2 = 1;
-            }
-            else{
-                c1--; 
-                c2--;                
-            }
+            int old_i = i;
+            while (i<nums.size() && nums[old_i] == nums[i]) ++i;
         }
-        // Confirming that ele1 and ele2 are actually majority
-        c1 = 0, c2 = 0;
-        for(int i=0; i<arr.size(); ++i){
-            if ( arr[i] == ele1) ++c1;
-            else if ( arr[i] == ele2) ++c2;
-        }
-        vector<int> ans; 
-        if ( c1 > arr.size()/3) ans.push_back(ele1);        
-        if ( c2 > arr.size()/3) ans.push_back(ele2);
-
         return ans; 
     }
 };
+

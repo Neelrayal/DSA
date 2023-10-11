@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"cmath": "cpp",
+			"array": "cpp",
+			"deque": "cpp",
+			"list": "cpp",
+			"vector": "cpp",
+			"memory": "cpp",
+			"functional": "cpp",
+			"future": "cpp",
+			"istream": "cpp",
+			"chrono": "cpp",
+			"random": "cpp",
+			"limits": "cpp",
+			"valarray": "cpp",
+			"unordered_map": "cpp",
+			"map": "cpp",
+			"complex": "cpp",
+			"new": "cpp",
+			"ostream": "cpp"
+		}
+	}
+}

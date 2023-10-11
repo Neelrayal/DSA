@@ -13,7 +13,28 @@ int main(){
  
     #endif    
 
-    cout << "Hello world\n";
-}
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n; 
 
-//"[[34,56], [28, 29], [12,16], [11,48], [28,54], [22,55], [28,41], [41,44]]"
+        string s; 
+        cin >> s; 
+        n = s.length(); 
+        int cur = 0, maxi = 0, comp = 0; 
+        for(int i = 0; i<n; ++i){
+            if ( s[i] == '(') cur++; 
+            else cur--; 
+            maxi = max(maxi, cur); 
+
+            if ( cur == 0){
+                if ( comp == 0) comp += maxi; 
+                else comp += maxi - 1; 
+                maxi = 0; 
+            }
+        }
+        cout << comp << "\n";
+    }
+    
+}
