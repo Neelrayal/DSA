@@ -3,16 +3,17 @@ using namespace std;
 
 int main(){        
 
-	ios_base::sync_with_stdio(0);
-	cin.tie(0); cout.tie(0);
+    ios_base::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
 
-	#ifndef ONLINE_JUDGE
-	 
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
+    #ifndef ONLINE_JUDGE
+     
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
  
-	#endif    
-	int a = pow(2,31) - 1; 
-	cout << ceil ( log2(a)); 
-	
+    #endif    
+
+    int i  = 0; 
+            
+    cout << "done\n";
 }
